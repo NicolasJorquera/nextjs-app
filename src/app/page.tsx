@@ -1,9 +1,9 @@
-import Image from "next/image";
+
 
 export default function Home() {
   return (
     <h1 className="m">
-      Hola mundo!
+      Esta es nuestra App por ahora
     </h1>
   );
 }

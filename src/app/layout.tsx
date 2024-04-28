@@ -19,11 +19,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full">
+    <html lang="en" className="min-h-full">
       
-      <body className="p-24 max-w-3xl mx-0 my-auto text-gray-50 bg-gradient-to-tr from-black to-gray-900">
+      <body className="p-24 max-w-3xl mx-0 my-auto text-gray-50 bg-gradient-to-tr from-black to-neutral-800">
         <Navigation/>
-        {children}
+        <div >
+          {children}
+        </div>
+        
       </body>
     </html>
   );

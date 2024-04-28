@@ -1,22 +1,29 @@
 import Link from "next/link";
 
 
-const links = [{
+const links = [
+{
     label: 'Home',
     route: '/'
-  }, {
+}, 
+{
     label: 'About',
-    route:'/about'
-  }]
+    route: '/about'
+},
+{
+    label: 'Posts',
+    route: '/posts'
+}
+]
 
 
 
-  export function Navigation() {
+export function Navigation() {
     return (
-        <header className="border-solid border-white border rounded p-3">
+        <header className="border-solid border-white border rounded p-3 mb-3">
             <nav >
                 <ul className="flex list-none gap-8 ">
-                    {links.map(({label, route}) => (
+                    {links.map(({ label, route }) => (
                         <li key={route} className="hover:underline">
                             <Link href={route}>
                                 {label}
@@ -27,4 +34,4 @@ const links = [{
             </nav>
         </header>
     )
-  }
+}
