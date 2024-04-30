@@ -19,9 +19,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="min-h-full">
+    <html lang="en" className="min-h-full flex justify-center">
       
-      <body className="p-24 max-w-3xl mx-0 my-auto text-gray-50 bg-gradient-to-tr from-black to-neutral-800">
+      <body className="p-24 max-w-fit mx-0 my-auto text-gray-50 bg-gradient-to-tr from-black to-neutral-800">
         <Navigation/>
         <div >
           {children}
